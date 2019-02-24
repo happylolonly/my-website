@@ -8,9 +8,9 @@ cache:
     - node_modules
 install:
   - npm install
-  - npm run build
 script:
   - npm test
+  - npm run build
 deploy:
   provider: surge
   project: ./build/
