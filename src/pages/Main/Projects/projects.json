@@ -28,6 +28,30 @@
     ]
   },
   {
+    "name": "flyspaces",
+    "link": "https://flyspaces.com",
+    "title": {
+      "ru": "Flyspaces",
+      "en": "Flyspaces"
+    },
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "technologies": [
+      "React",
+      "Redux",
+      "PWA",
+      "Webpack",
+      "Node.js",
+      "Express",
+      "MongoDB"
+    ],
+    "screenshots": [
+      "1.png"
+    ]
+  },
+  {
     "name": "dating",
     "link": "https://dating.com",
     "title": {
@@ -44,6 +68,27 @@
       "Less",
       "Node.js",
       "Express"
+    ],
+    "screenshots": [
+      "1.png"
+    ]
+  },
+  {
+    "name": "lombard",
+    "link": "https://likvi.com",
+    "title": {
+      "ru": "Likvi",
+      "en": "Likvi"
+    },
+    "description": {
+      "ru": "Приложение по агрегации ломбардов в России",
+      "en": "Приложение по агрегации ломбардов в России"
+    },
+    "technologies": [
+      "React",
+      "Redux",
+      "Scss",
+      "Bootstrap"
     ],
     "screenshots": [
       "1.png"
@@ -70,25 +115,32 @@
       "1.png"
     ]
   },
+
   {
-    "name": "lombard",
-    "link": "https://likvi.com",
+    "name": "vstrechatut",
+    "link": "http://www.vstrecha-tut.com",
     "title": {
-      "ru": "Likvi",
-      "en": "Likvi"
+      "ru": "Вечера свиданий в Сочи",
+      "en": "Вечера свиданий в Сочи"
     },
     "description": {
-      "ru": "Приложение по агрегации ломбардов в России",
-      "en": "Приложение по агрегации ломбардов в России"
+      "ru": "Вечера свиданий в Сочи",
+      "en": "Вечера свиданий в Сочи"
     },
     "technologies": [
-      "React",
-      "Redux",
-      "Scss",
-      "Bootstrap"
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "jQuery",
+      "Bootstrap",
+      "PHP"
     ],
     "screenshots": [
-      "1.png"
+      "1.png",
+      "2.png",
+      "3.png",
+      "4.png",
+      "5.png"
     ]
   },
   {
@@ -117,4 +169,5 @@
       "4.png"
     ]
   }
+
 ]
