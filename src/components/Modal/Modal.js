@@ -21,7 +21,7 @@ class Modal extends Component {
 
   render() {
     return ReactDom.createPortal(
-      <div className="modal">
+      <div className={`modal ${this.props.className}`}>
         <div className="inner">
           <span className="close" onClick={this.props.close}>
             x
