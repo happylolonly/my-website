@@ -54,7 +54,7 @@ class Projects extends Component {
         <ProjectsList projects={projects} openProject={this.openProject} />
 
         {this.state.isModalOpen && (
-          <Modal close={this.closeModal}>
+          <Modal close={this.closeModal} className="project-details-modal">
             <ProjectDetails {...this.getProps(this.state.currentProject)} />
           </Modal>
         )}

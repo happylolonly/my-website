@@ -36,7 +36,6 @@ const ProjectDetails = ({
         {screenshots.map(screenshot => {
           return (
             <div key={screenshot} className="tes">
-              <h3>sjjdk</h3>
               <img src={getPathToScreenshot(name, screenshot)} alt="" />
             </div>
           );
@@ -45,9 +44,9 @@ const ProjectDetails = ({
 
       <p>{description.ru}</p>
 
-      <div>
+      <div className="technologies">
         {technologies.map(technology => {
-          return <div key={technology}>{technology}</div>;
+          return <span key={technology}>{technology}</span>;
         })}
       </div>
 

@@ -18,10 +18,10 @@ const ProjectsItem = ({ name, screenshots, title, openProject }) => {
 
   return (
     <div className="projects-item" onClick={open}>
+      <h5>{title.ru}</h5>
       <div className="preview-wrapper">
         <img src={getPathToScreenshot(name, screenshots[0])} alt={`${title.ru} preview`} />
       </div>
-      <h5>{title.ru}</h5>
     </div>
   );
 };

@@ -2,6 +2,10 @@
 
   display: flex;
 
+  h3 {
+    text-transform: lowercase !important;
+  }
+
   img {
     max-width: 300px;
   }
