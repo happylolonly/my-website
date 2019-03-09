@@ -8,12 +8,12 @@ import './FastModal.scss';
 const text = {
   ru: {
     main:
-      "Website in development now. Prefer show anything, than nothing. Main information and logic are working. Don't have time for styles now. Update them later.",
+      "Website in development now. Prefer show anything, than nothing. Main information and logic are working. Don't have time for styles now. Update them later =)",
     button: "I'am understand 😌",
   },
   en: {
     main:
-      "Website in development now. Prefer show anything, than nothing. Main information and logic are working. Don't have time for styles now. Update them later.",
+      "Website in development now. Prefer show anything, than nothing. Main information and logic are working. Don't have time for styles now. Update them later =)",
     button: "I'am understand 😌",
   },
 };
