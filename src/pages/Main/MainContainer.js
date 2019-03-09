@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import Main from './Main';
 
-// import './StateComponent.scss';
+// import './MainContainer.scss';
 
-class StateComponent extends Component {
+class MainContainer extends Component {
   static propTypes = {};
 
   state = {};
@@ -19,4 +19,4 @@ class StateComponent extends Component {
   }
 }
 
-export default StateComponent;
+export default MainContainer;

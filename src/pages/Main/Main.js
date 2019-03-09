@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { Link } from 'react-router-dom';
+
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Skills from './Skills/Skills';
 import Projects from './Projects/Projects';
-import Contact from './Contact/Contact';
 
 import './Main.scss';
 
@@ -18,7 +19,8 @@ const Main = () => {
       <About />
       <Skills />
       <Projects />
-      <Contact />
+
+      <Link to="/contact">Contact me</Link>
     </div>
   );
 };

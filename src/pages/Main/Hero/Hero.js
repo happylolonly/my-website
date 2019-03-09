@@ -11,7 +11,7 @@ const propTypes = {};
 
 const Hero = () => {
   return (
-    <div className="hero" id="hero">
+    <div className="hero" id="top">
       <div className="photo-wrapper">
         <img src="/images/me.jpg" alt="" />
       </div>

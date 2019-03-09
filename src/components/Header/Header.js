@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { Link } from 'react-router-dom';
+
 import './Header.scss';
 
 const propTypes = {};
@@ -10,21 +12,31 @@ const Header = () => {
     <nav className="header">
       <ul>
         <li>
-          <a href="#hero">Главная</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#about">Обо мне</a>
+          <Link to="/resume">Resume</Link>
         </li>
         <li>
-          <a href="#skills">Навыки</a>
-        </li>
-        <li>
-          <a href="#projects">Проекты</a>
-        </li>
-        <li>
-          <a href="#contact">Контакты</a>
+          <Link to="/contact">Contacts</Link>
         </li>
       </ul>
+      {window.location.pathname === '/' && (
+        <ul>
+          <li>
+            <a href="#top">Наверх</a>
+          </li>
+          <li>
+            <a href="#about">Обо мне</a>
+          </li>
+          <li>
+            <a href="#skills">Навыки</a>
+          </li>
+          <li>
+            <a href="#projects">Проекты</a>
+          </li>
+        </ul>
+      )}
     </nav>
   );
 };
