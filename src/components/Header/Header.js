@@ -3,41 +3,49 @@ import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
 
+import LanguageSwitcher from './LanguageSwitcher/LanguageSwitcher';
+
 import './Header.scss';
 
-const propTypes = {};
+const propTypes = {
+  changeLanguage: PropTypes.func.isRequired,
+};
 
-const Header = () => {
+const Header = ({ changeLanguage }) => {
   return (
-    <nav className="header">
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/resume">Resume</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contacts</Link>
-        </li>
-      </ul>
-      {window.location.pathname === '/' && (
+    <header className="header">
+      <nav>
         <ul>
           <li>
-            <a href="#top">Наверх</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#about">Обо мне</a>
+            <Link to="/resume">Resume</Link>
           </li>
           <li>
-            <a href="#skills">Навыки</a>
-          </li>
-          <li>
-            <a href="#projects">Проекты</a>
+            <Link to="/contact">Contacts</Link>
           </li>
         </ul>
-      )}
-    </nav>
+        {/* {window.location.pathname === '/' && (
+          <ul>
+            <li>
+              <a href="#top">Наверх</a>
+            </li>
+            <li>
+              <a href="#about">Обо мне</a>
+            </li>
+            <li>
+              <a href="#skills">Навыки</a>
+            </li>
+            <li>
+              <a href="#projects">Проекты</a>
+            </li>
+          </ul>
+        )} */}
+      </nav>
+
+      <LanguageSwitcher changeLanguage={changeLanguage} />
+    </header>
   );
 };
 
