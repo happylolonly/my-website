@@ -8,7 +8,7 @@ import ContactPage from './pages/Contact/ContactContainer';
 import Modal from './components/Modal/Modal';
 import FastModal from './components/FastModal/FastModal';
 
-import { LanguageContext } from './context';
+import { LanguageContext, defaultLanguage } from './context';
 
 import { Switch, Route } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
@@ -18,11 +18,12 @@ import './App.scss';
 class App extends Component {
   state = {
     isModalOpen: false,
+    language: defaultLanguage,
   };
 
   componentDidMount() {
     setTimeout(() => {
-      this.setState({ isModalOpen: true });
+      // this.setState({ isModalOpen: true });
     }, 2500);
   }
 
@@ -32,12 +33,16 @@ class App extends Component {
     });
   };
 
+  changeLanguage = language => {
+    this.setState({ language });
+  };
+
   render() {
     return (
       <div className="app">
         <BrowserRouter>
-          <LanguageContext.Provider value="en">
-            <Header />
+          <LanguageContext.Provider value={this.state.language}>
+            <Header changeLanguage={this.changeLanguage} />
 
             <Switch>
               <Route exact path="/" component={MainPage} />
