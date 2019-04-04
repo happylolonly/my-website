@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
+import { Button } from '../../components/Button';
 
 import Hero from './Hero/Hero';
 import About from './About/About';
@@ -20,7 +21,10 @@ const Main = () => {
       <Skills />
       <Projects />
 
-      <Link to="/contact">Contact me</Link>
+      <p>Я подхожу под твою задачу?</p>
+      <Link className="btn-success" to="/contact">
+        Contact me
+      </Link>
     </div>
   );
 };

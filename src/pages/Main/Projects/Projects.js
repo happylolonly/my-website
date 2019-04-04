@@ -50,7 +50,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="projects" id="projects">
-        <h3>Проекты</h3>
+        <h3>Projects</h3>
         <ProjectsList projects={projects} openProject={this.openProject} />
 
         {this.state.isModalOpen && (

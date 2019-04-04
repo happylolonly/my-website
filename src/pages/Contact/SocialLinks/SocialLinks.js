@@ -1,16 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { withLanguage } from '../../../hocs/language';
+
 import links from './links';
 
 import './SocialLinks.scss';
 
+const texts = {
+  social: {
+    ru: 'Я на просторах интернета',
+    en: 'Find me somewhere in Enternet',
+  },
+};
+
 const propTypes = {};
 
-const SocialLinks = () => {
+const SocialLinks = ({ lang }) => {
   return (
     <div className="social-links">
-      Social links
+      {texts.social[lang]}
       <ul>
         {links.map(({ name, link }) => {
           return (
@@ -28,4 +37,4 @@ const SocialLinks = () => {
 
 SocialLinks.propTypes = propTypes;
 
-export default SocialLinks;
+export default withLanguage(SocialLinks);

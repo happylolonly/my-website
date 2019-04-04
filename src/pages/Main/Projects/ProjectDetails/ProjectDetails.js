@@ -1,11 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { withLanguage } from '../../../../hocs/language';
+
 import Slider from 'react-slick';
+import TechnologyBadge from '../../../../components/TechnologyBadge/TechnologyBadge';
 
 import './ProjectDetails.scss';
 
 const propTypes = {};
+
+const texts = {
+  codeLink: {
+    ru: 'Исходный код',
+    en: 'Source code',
+  },
+};
 
 function getPathToScreenshot(project, name) {
   return `/images/projects/${project}/${name}`;
@@ -19,14 +29,17 @@ const ProjectDetails = ({
   technologies,
   screenshots,
   codeLink,
+  lang,
 }) => {
   var settings = {
     dots: true,
     infinite: true,
-    // speed: 500,
-    // slidesToShow: 1,
-    // slidesToScroll: 1,
+    speed: 500,
   };
+
+  function openImage(event) {
+    window.open(event.target.src);
+  }
 
   return (
     <div className="project-details">
@@ -35,9 +48,12 @@ const ProjectDetails = ({
       <Slider {...settings}>
         {screenshots.map(screenshot => {
           return (
-            <div key={screenshot} className="tes">
-              <img src={getPathToScreenshot(name, screenshot)} alt="" />
-            </div>
+            <img
+              key={screenshot}
+              src={getPathToScreenshot(name, screenshot)}
+              alt=""
+              onClick={openImage}
+            />
           );
         })}
       </Slider>
@@ -46,7 +62,7 @@ const ProjectDetails = ({
 
       <div className="technologies">
         {technologies.map(technology => {
-          return <span key={technology}>{technology}</span>;
+          return <TechnologyBadge key={technology} name={technology} />;
         })}
       </div>
 
@@ -54,7 +70,7 @@ const ProjectDetails = ({
 
       {codeLink && (
         <div>
-          <p>COde</p>
+          <p>{texts.codeLink[lang]}</p>
           <a href={codeLink} target="_blank" rel="noopener noreferrer">
             {codeLink}
           </a>
@@ -66,4 +82,4 @@ const ProjectDetails = ({
 
 ProjectDetails.propTypes = propTypes;
 
-export default ProjectDetails;
+export default withLanguage(ProjectDetails);
