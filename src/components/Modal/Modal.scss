@@ -19,8 +19,13 @@
     .close {
       cursor: pointer;
       position: absolute;
+      font-size: 30px;
       top: 20px;
-      right: 20px;
+      right: 35px;
+
+      &:hover {
+        color: red;
+      }
     }
   }
 }
