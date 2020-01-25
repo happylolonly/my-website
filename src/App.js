@@ -13,6 +13,7 @@ import { Switch, Route } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 
 import './App.scss';
+import Projects from './pages/projects';
 
 class App extends Component {
   state = {
@@ -29,6 +30,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={MainPage} />
               <Route path="/development" component={ResumePage} />
+              <Route path="/projects" component={Projects} />
               <Route path="/contact" component={ContactPage} />
             </Switch>
           </LanguageContext.Provider>
