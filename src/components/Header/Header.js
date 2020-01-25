@@ -3,15 +3,11 @@ import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
 
-import LanguageSwitcher from './LanguageSwitcher/LanguageSwitcher';
-
 import './Header.scss';
 
-const propTypes = {
-  changeLanguage: PropTypes.func.isRequired,
-};
+const propTypes = {};
 
-const Header = ({ changeLanguage }) => {
+const Header = () => {
   return (
     <header className="header">
       <nav>
@@ -43,8 +39,6 @@ const Header = ({ changeLanguage }) => {
           </ul>
         )} */}
       </nav>
-
-      <LanguageSwitcher changeLanguage={changeLanguage} />
     </header>
   );
 };
