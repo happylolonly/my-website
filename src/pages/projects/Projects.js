@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import ProjectsList from './ProjectsList/ProjectsList';
 import ProjectDetails from './ProjectDetails/ProjectDetails';
-import Modal from '../../../components/Modal/Modal';
+import Modal from '../../components/Modal/Modal';
 
 import projects from './projects.json';
 

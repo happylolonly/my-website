@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { withLanguage } from '../../../../hocs/language';
+import { withLanguage } from '../../../hocs/language';
 
 import Slider from 'react-slick';
-import TechnologyBadge from '../../../../components/TechnologyBadge/TechnologyBadge';
+import TechnologyBadge from '../../../components/TechnologyBadge/TechnologyBadge';
 
 import './ProjectDetails.scss';
 
