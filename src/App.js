@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Header from './components/Header/Header';
 import MainPage from './pages/Main/MainContainer';
-import ResumePage from './pages/Resume/ResumeContainer';
+import ResumePage from './pages/development/index';
 import ContactPage from './pages/Contact/ContactContainer';
 
 import Modal from './components/Modal/Modal';
@@ -47,6 +47,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={MainPage} />
               <Route path="/resume" component={ResumePage} />
+              <Route path="/development" component={ResumePage} />
               <Route path="/contact" component={ContactPage} />
             </Switch>
 

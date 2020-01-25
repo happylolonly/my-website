@@ -2,22 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './Resume.scss';
+import { Link } from 'react-router-dom';
 
 const propTypes = {};
 
 const Resume = () => {
   return (
-    <div className="resume">
-      <h3>Resume</h3>
+    <div className="resume-page">
+      <h3>Development</h3>
 
-      <p>One day it will be good page with my resume...</p>
+      <p>I am a JavaScript developer</p>
+
+      <p>One day I will update this page...</p>
+
       <img
         src="https://image.freepik.com/vector-gratis/atardecer-paisaje-cartoon_1110-888.jpg"
         alt=""
         height="300"
       />
 
-      <p>but for now check this links:</p>
+      <p>but for now you can check this links:</p>
+
+      <Link to="projects">Projects</Link>
 
       <ul>
         <li>
