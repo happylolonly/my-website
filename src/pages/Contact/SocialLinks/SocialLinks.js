@@ -9,8 +9,7 @@ import './SocialLinks.scss';
 
 const texts = {
   social: {
-    ru: 'Я на просторах интернета',
-    en: 'Find me somewhere in Enternet',
+    en: 'Find me somewhere in the Internet',
   },
 };
 

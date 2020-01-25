@@ -9,7 +9,7 @@ const propTypes = {};
 
 const Contact = () => {
   return (
-    <div className="contacts" id="contacts">
+    <div className="contacts-page">
       <h3>Contacts</h3>
       <SocialLinks />
     </div>
