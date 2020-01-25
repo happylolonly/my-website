@@ -7,7 +7,6 @@ import { Button } from '../../components/Button';
 import Hero from './Hero/Hero';
 import About from './About/About';
 import Skills from './Skills/Skills';
-import Projects from './Projects/Projects';
 
 import './Main.scss';
 
@@ -17,14 +16,14 @@ const Main = () => {
   return (
     <div className="main">
       <Hero />
-      <About />
-      <Skills />
-      <Projects />
+      {/* <About /> */}
+      {/* <Skills /> */}
 
-      <p>Я подхожу под твою задачу?</p>
-      <Link className="btn-success" to="/contact">
-        Contact me
-      </Link>
+      {/* <div className="contact-me">
+        <Link className="btn-success" to="/contact">
+          Contact me
+        </Link>
+      </div> */}
     </div>
   );
 };
