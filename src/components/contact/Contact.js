@@ -1,15 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import SocialLinks from './SocialLinks/SocialLinks'
+import SocialLinks from './SocialLinks/SocialLinks';
 
-import Layout from '../layout'
+import Layout from '../layout';
 
-import SEO from '../seo'
+import SEO from '../seo';
 
-import './Contact.scss'
+import './Contact.scss';
 
-const propTypes = {}
+const propTypes = {};
 
 const Contact = () => {
   return (
@@ -18,12 +18,13 @@ const Contact = () => {
 
       <div className="contacts-page">
         <h3>Contacts</h3>
+        <p>I am on the Internet</p>
         <SocialLinks />
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-Contact.propTypes = propTypes
+Contact.propTypes = propTypes;
 
-export default Contact
+export default Contact;

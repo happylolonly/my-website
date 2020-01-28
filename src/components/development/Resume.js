@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import './Resume.scss'
-import { Link } from 'gatsby'
+import './Resume.scss';
+import { Link } from 'gatsby';
 
-const propTypes = {}
+const propTypes = {};
 
 const Resume = () => {
   return (
@@ -23,7 +23,7 @@ const Resume = () => {
 
       <p>but for now you can check this links:</p>
 
-      <Link to="projects">Projects</Link>
+      <Link to="/projects">Projects</Link>
 
       <ul>
         <li>

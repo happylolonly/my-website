@@ -1,11 +1,13 @@
 .social-links {
+  // max-width: 100%;
+
   ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
     li {
       margin: 0 10px;
-
     }
   }
 }
