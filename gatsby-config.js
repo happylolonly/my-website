@@ -22,8 +22,8 @@ module.exports = {
         name: `Cheslav Zhuravsky's website`,
         short_name: `Cheslav Zhuravsky`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#f1f351`,
+        theme_color: `#f1f351`,
         display: `minimal-ui`,
         icon: `static/logo2.png`, // This path is relative to the root of the site.
       },
