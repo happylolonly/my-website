@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="hero" id="top">
       <div className="photo-wrapper">
-        <img src="/images/me 2.jpg" alt="" />
+        <img src={require('./images/me 2.jpg')} alt="Cheslav Zhuravsky" />
       </div>
 
       <div className="hero-text">
