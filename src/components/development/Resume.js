@@ -44,16 +44,39 @@ const Resume = () => {
             Upwork
           </a>
         </li>
+      </ul>
+
+      <h5>Github</h5>
+
+      <ul>
         <li>
           <a href="https://github.com/happylolonly" target="_blank" rel="noopener noreferrer">
             Github
           </a>
         </li>
+        <li>
+          <a
+            href="https://coderstats.net/github/#HappyLoLonly"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Coderstats
+          </a>
+        </li>
+        <li>
+          <a
+            href="http://git-awards.com/users/search?login=happylolonly"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            git-awards
+          </a>
+        </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-Resume.propTypes = propTypes
+Resume.propTypes = propTypes;
 
-export default Resume
+export default Resume;
