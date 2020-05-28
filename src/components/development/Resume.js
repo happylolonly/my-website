@@ -23,7 +23,20 @@ const Resume = () => {
 
       <p>but for now you can check this links:</p>
 
-      <Link to="/projects">Projects</Link>
+      <ul>
+        <li>
+          <Link to="/projects">Projects</Link>
+        </li>
+        <li>
+          <a
+            href="https://docs.google.com/spreadsheets/d/1m2GCmSMC1CIPycSTXIL4FWAUuGv28yXmAQP_09Tg5sg/edit"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Projects List
+          </a>
+        </li>
+      </ul>
 
       <ul>
         <li>
@@ -44,6 +57,16 @@ const Resume = () => {
             Upwork
           </a>
         </li>
+
+        <li>
+          <a
+            href="https://www.codewars.com/users/HappyLoL"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Codewars
+          </a>
+        </li>
       </ul>
 
       <h5>Github</h5>
@@ -54,6 +77,23 @@ const Resume = () => {
             Github
           </a>
         </li>
+
+        <li>
+          <a
+            href="https://profile.codersrank.io/user/happylolonly"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Codersrank
+          </a>
+        </li>
+
+        <li>
+          <a href="https://sourcerer.io/happylolonly" target="_blank" rel="noopener noreferrer">
+            Sourcerer
+          </a>
+        </li>
+
         <li>
           <a
             href="https://coderstats.net/github/#HappyLoLonly"
@@ -63,13 +103,14 @@ const Resume = () => {
             Coderstats
           </a>
         </li>
+
         <li>
           <a
             href="http://git-awards.com/users/search?login=happylolonly"
             target="_blank"
             rel="noopener noreferrer"
           >
-            git-awards
+            Git awards
           </a>
         </li>
       </ul>
