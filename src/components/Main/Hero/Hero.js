@@ -6,7 +6,11 @@ const Hero = () => {
   return (
     <div className="hero" id="top">
       <div className="photo-wrapper">
-        <img src={require('./images/me 2.jpg')} alt="Cheslav Zhuravsky" />
+        {/* <img src={require('./images/me 2.jpg')} alt="Cheslav Zhuravsky" /> */}
+        <img
+          src="https://www.gravatar.com/avatar/b02b0861e0b03e1a22081df0292f3fb2?size=600"
+          alt="Cheslav Zhuravsky"
+        />
       </div>
 
       <div className="hero-text">
