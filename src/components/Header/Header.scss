@@ -1,11 +1,12 @@
 .header {
-
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1080px;
 
   ul {
-    list-style: none;
     display: flex;
+    list-style: none;
 
     li {
       margin: 10px;
